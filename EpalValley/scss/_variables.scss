@@ -1,0 +1,60 @@
+
+
+/*    Fonts
+-------------------------------------------------------------- */
+$primary-font: "Source Sans Pro", helvetica, arial, sans-serif;
+$secondary-font: "Source Sans Pro", verdana, tahoma, sans-serif;
+
+
+/*    Colors
+-------------------------------------------------------------- */
+
+// General
+$black: #393F41;
+$white: #fff;
+$purple: #533b9a;
+
+$peach : #ed6950;
+$yellow : #ffc74a;
+$yellow2 : #b98000;
+$gray : #bdc8d9;
+$gray2 : #606f81;
+$gray3 : #8d97a5;
+$layer : #343434;
+
+
+$white_big : #f3f3f2;
+$pink : #ef575d;
+$red : #eb272e;
+$green : #86bd3d;
+$gray : #9d9d9d;
+$gray2 : #b8b8b8;
+$orange : #fdba3e;
+$line : #565656;
+
+// Typography
+$text-color: $gray2; // used for main body text
+$h1: $white; // used for <h1>'s
+$h2: $gray2; // used for <h2>'s
+$h3: $h2; // used for <h3>'s
+$link: $yellow; // main link color
+$link-hover: #444; // main link hover color
+$divider : $pink;
+$background : #fff;
+
+/*    Units
+-------------------------------------------------------------- */
+
+// Typography
+$font-size: .9375rem; // used for main body text
+$line-height: 1.875rem; // used for line-height on main body text
+$h1-size: 3rem; // used for size of content <h1>
+$h2-size: 1.875rem; // used for size of content <h2>
+$h3-size: 1.5rem; // used for size of content <h3>
+$nav-size : 1rem;
+
+// Breakpoints
+$large-bp: 1300px;
+$med-bp: 1000px;
+$small-bp: 700px;
+$xsmall-bp : 400px;

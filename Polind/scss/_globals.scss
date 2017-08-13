@@ -1,0 +1,14 @@
+
+body { background: $background;}
+
+.container { padding: 0 30px;}
+.button {
+    border-radius: 20px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: $yellow2;
+    background: $yellow;
+    border-color: $yellow;
+}

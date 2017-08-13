@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="http://bulma.io">
+					<img src="image/logo.png" alt="Logo" width="139" height="45">
+				</a>
+
+				<div class="navbar-burger burger" data-target="navMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+			</div>
+
+			<div id="navMenu" class="navbar-menu">
+				<div class="navbar-start">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="#">
+							<span class="icon">
+								<i class="fa fa-tag" aria-hidden="true"></i>
+							</span>
+							Menu
+						</a>
+						<div class="navbar-dropdown ">
+							<a class="navbar-item " href="/documentation/overview/start/">
+								Pizza Peperoni
+							</a>
+							<a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
+								Alaska
+							</a>
+						</div>
+					</div>
+					<a class="navbar-item" href="#">
+						<span class="icon">
+								<i class="fa fa-tag" aria-hidden="true"></i>
+							</span>
+						Best Deals
+					</a>
+					<a class="navbar-item" href="#">
+						<span class="icon">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+							</span>
+						Store Locater
+					</a>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="#">
+							<span class="icon">
+								<i class="fa fa-motorcycle"  data-badge="8" aria-hidden="true"></i>
+							</span>
+							$15.90
+						</a>
+						<div class="navbar-dropdown ">
+							<a class="navbar-item " href="/documentation/overview/start/">
+								Checkout
+							</a>
+							<a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
+								Logout
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<section class="hero">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="red">Discover What's New</h1>
+				<div class="hero-title">
+					<span class="small-text">and</span> order
+					<div class="small-text inline-text">
+						<span>with</span>
+						<span>visa</span>
+					</div>  online
+				</div>
+				<div class="arrow_img">
+					<img src="image/arrow.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="tile is-ancestor">
+			<div class="container">
+				<div class="tile is-vertical is-12">
+					<div class="tile">
+						<div class="tile is-parent">
+							<div class="menu-item tile is-child" style="background:url('image/pizza-cover.jpg');">
+								<h3 class="menu-title">grilled chicken</h3>
+								<p class="menu-description">summer pizza</p>
+								<span class="menu-flavour">hot & spicy</span>
+								<span class="important">* only in local</span>
+							</div>
+						</div>
+						<div class="tile is-parent is-vertical">
+							<div class="location-card tile is-child notification">
+								<div class="location-card-title">
+									<img src="image/marker.png"/>
+									<h3>find</h3>
+									<div class="small-text inline-text">
+										<span>an pizzaro's</span>
+										<span>location near you!</span>
+									</div> 
+								</div>
+								<div class="location-card-search">
+									<input type="text" class="input" placeholder="Zip Code or State Province">
+									<button type="submit" class="button" value="Find & Save">Find & Save</button>
+								</div>
+							</div>
+							<div class="card-text-only tile is-child"  style="background-image:url('image/girl.jpg');">
+								<h3><span>order</span> online</h3>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container list-recipe">
+			<div class="columns">
+				<div class="column is-4">
+					<div class="menu-item" style="background-image:url('image/veggie.jpg');">
+						<h3 class="menu-title black">veggie+</h3>
+						<p class="menu-description black">specials</p>
+						<span class="menu-price"><span class="currency">$</span><span>9</span>99</span>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="menu-item"  style="background-image:url('image/wrap.jpg');">
+						<h3 class="menu-title">chicken wrap</h3>
+						<p class="menu-description">specials</p>
+						<span class="important">* only in local</span>
+						<span class="menu-price"><span class="currency">$</span><span>5</span>99</span>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="menu-item"  style="background-image:url('image/coffee.jpg');">
+						<h3 class="menu-title">iCED COFFEE</h3>
+						<p class="menu-description">SUMMERS</p>
+						<span class="important">* only in local</span>
+						<span class="menu-price"><span class="currency">$</span><span>3</span>99</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container menu-categories">
+			<div class="columns list-recipe">
+				<div class="column is-6">
+					<div class="menu-ads overlay"  style="background-image:url('image/menu.jpg');">
+						<h3 class="ads-title">flavor menu</h3>
+						<p class="ads-description">VEGGIE LOVER - HAND TOSTED</p>
+					</div>
+				</div>
+				<div class="column is-6">
+					<div class="menu-ads overlay"  style="background-image:url('image/burger.jpg');">
+						<h3 class="ads-title">breakfast menu</h3>
+						<p class="ads-description">from 7 am to 10 am</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="http://bulma.io">
+						<img src="image/logo.png" alt="Logo"  width="auto" height="45">
+					</a>
+				</div>
+
+				<div id="navMenuExample" class="navbar-menu is-hidden-mobile">
+					<div class="navbar-start nav-center">
+						<a class="navbar-item" href="#">
+							Home
+						</a>
+						<a class="navbar-item" href="#">
+							Best Deals
+						</a>
+						<a class="navbar-item" href="#">
+							About Us
+						</a>
+						<a class="navbar-item" href="#">
+							Blog
+						</a>
+						<a class="navbar-item" href="#">
+							Store Locater
+						</a>
+					</div>
+
+					<div class="navbar-end">
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-item" href="#">
+								 <span class="icon">
+									<i class="fa fa-twitter"></i>
+								</span>
+							</a>
+							<a class="navbar-item" href="#">
+								 <span class="icon">
+									<i class="fa fa-instagram"></i>
+								</span>
+							</a>
+							<a class="navbar-item" href="#">
+								 <span class="icon">
+									<i class="fa fa-facebook"></i>
+								</span>
+							</a>
+							<a class="navbar-item" href="#">
+								 <span class="icon">
+									<i class="fa fa-vine"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+		// Get all "navbar-burger" elements
+		var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Check if there are any nav burgers
+		if ($navbarBurgers.length > 0) {
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(function ($el) {
+			$el.addEventListener('click', function () {
+
+				// Get the target from the "data-target" attribute
+				var target = $el.dataset.target;
+				var $target = document.getElementById(target);
+
+				// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+				$el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+
+			});
+			});
+		}
+
+		});
+	</script>
+
+</body>
+</html>

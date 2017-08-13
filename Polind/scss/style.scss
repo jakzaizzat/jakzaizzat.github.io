@@ -1,0 +1,52 @@
+
+
+//Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// Partials
+@import "reset";
+@import "bulma";
+@import "variables";
+@import "mixins";
+@import "globals";
+
+body {
+	font-family: $primary-font;
+	min-height: 100vh;
+}
+
+.nav { color: $white; box-shadow: none !important;
+	.logo{ 
+		font-size: $line-height !important; font-weight: 700; color: $white !important;
+		img { margin-right: 10px; width: auto;max-height: 50px;}
+	}
+	.nav-item { font-size: $nav-size; color: $white !important;
+		.fa { color: $yellow; font-size: $nav-size;}
+	}
+}
+
+.hero { 
+	padding: 40px 0;  
+	background-image: url('../image/cover.jpg');
+	background-size: cover;	
+	background-color: $layer;
+	background-blend-mode: multiply;
+	.hero-body{
+		h1{
+			color: $white;
+			font-size: 5rem;
+			span{ color: $peach;}
+		}
+		h2 { color: rgba($white, .2); margin-bottom: 30px;}
+	}
+}
+
+.category{
+	padding: 60px 30px 40px;
+	background-size: cover;
+	margin: 10px 15px;
+	text-align: center;
+	h3{ font-size: 2rem; color: $white; font-weight: 700; }
+	p { font-size: $font-size; color: $yellow; margin-bottom: 50px;}
+}

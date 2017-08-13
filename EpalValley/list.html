@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
+</head>
+<body>
+
+<section class="hero is-medium">
+    
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a class="nav-item logo"  href="https://epalvalley.com/">
+                        <img src="image/logo.svg" alt="EV Logo"> EPALVALLEY
+                    </a>
+                </div>
+                
+                <span class="navbar-burger burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <div id="navMenu" class="nav-right nav-menu">
+                    <a class="nav-item is-active" href="https://epalvalley.com/about">
+                        About
+                    </a>
+                    <a class="nav-item" href="https://epalvalley.com/contact">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+<div class="hero-body content-meta" style="background-image: url('image/cover.jpg');">
+<div class="container">
+    <h1 class="title">
+        How to Enable Ssl on Wordpress
+    </h1>
+    <h2 class="date">
+        Sat Aug 12, 2017 
+    </h2>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="hero">
+    <div class="container">
+        <h1 class="title">
+            List of Articles
+        </h1>
+    </div>
+</div>
+</section>
+
+<section class="list">
+    <div class="container hero-body">
+            
+        <li>
+            <a href="http://localhost:1313/blog/how-to-enable-ssl-on-wordpress/">2017-08-12 | <span>How to Enable SSL on Wordpress</span></a>
+        </li>
+        
+    </div>
+</section>
+    
+
+
+<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+		// Get all "navbar-burger" elements
+		var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Check if there are any nav burgers
+		if ($navbarBurgers.length > 0) {
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(function ($el) {
+			$el.addEventListener('click', function () {
+
+				// Get the target from the "data-target" attribute
+				var target = $el.dataset.target;
+				var $target = document.getElementById(target);
+
+				// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+				$el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+
+			});
+			});
+		}
+
+		});
+	</script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/script.js"/>
+</body>
+</html>

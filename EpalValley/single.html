@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
+</head>
+<body>
+
+<section class="hero is-medium">
+    
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a class="nav-item logo"  href="https://epalvalley.com/">
+                        <img src="image/logo.svg" alt="EV Logo"> EPALVALLEY
+                    </a>
+                </div>
+                
+                <span class="navbar-burger burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <div id="navMenu" class="nav-right nav-menu">
+                    <a class="nav-item is-active" href="https://epalvalley.com/about">
+                        About
+                    </a>
+                    <a class="nav-item" href="https://epalvalley.com/contact">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+<div class="hero-body content-meta" style="background-image: url('image/cover.jpg');">
+<div class="container">
+    <h1 class="title">
+        How to Enable Ssl on Wordpress
+    </h1>
+    <h2 class="date">
+        Sat Aug 12, 2017 
+    </h2>
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="container hero-body">
+    <article id="content">
+        
+
+<p>Have an SSL on your website will increase SEO your site on the Google, Increase trustworthy visitors and make user know that you cared the website. I just enable the SSL on this website; this is how I do it. There are manual setup or using plugins. Choose which one was suitable for you. I will teach the harder first (not so much), and then we go to the simple step.  It required around 5 minutes.</p>
+
+<h2 id="manual-setup">Manual Setup</h2>
+
+<p>First of all, login to the <strong>WordPress</strong> dashboard and go to the <strong>Settings  -&gt; General</strong> and changed the existing URL into new URL with https:// at the front. Don’t forget to save the settings.</p>
+
+<p>Open the <strong>.htaccess</strong> file and add the code below. The <strong>.htaccess</strong> file can’t be found in WordPress, you may find it through hosting either using Cpanel, Filezilla or terminal.</p>
+
+<pre><code>&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.yoursite.com/$1 [R,L]
+&lt;/IfModule&gt;
+</code></pre>
+
+<p>If you’re using <strong>Nginx</strong> server, please add this code below. Replace yoursite.com with your URL</p>
+
+<pre><code>server {
+listen 80;
+server_name yoursite.com www.yoursite.com;
+return 301 https://yoursite.com$request_uri;
+}
+</code></pre>
+
+<p>If you are using Cpanel likes me, you may see it on the current WordPress installation folder <strong>(/public_html/)</strong> and if you didn’t find it, the file is hidden. You may show the hidden file by clicking the setting button on top right and tick the show hidden files option.</p>
+
+<p>Eureka, now the file has appeared and you able to edit the file now.</p>
+
+<p>Now, your WordPress has enabled SSL. Congratulations.</p>
+
+<h2 id="plugins-setup">Plugins Setup</h2>
+
+<p>This step suitable for someone who didn&rsquo;t want to work with technical stuff. If you have the intention to minimize the plugin&rsquo;s usage on the WordPress, try to use manual setup first.</p>
+
+<p>First, log in to WordPress dashboard and go to the Plugins -&gt; Add New.Search for SSL in the search bar at the top.</p>
+
+<p>Choose Really Simple SSL and click install Now. Activate the plugins, and you’re done. It required to login once again to fully support the SSL.</p>
+
+    </article>
+</div>
+</section>
+
+  
+  </div>
+  <div>
+      
+      
+  </div>
+</aside>
+
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+		// Get all "navbar-burger" elements
+		var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Check if there are any nav burgers
+		if ($navbarBurgers.length > 0) {
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(function ($el) {
+			$el.addEventListener('click', function () {
+
+				// Get the target from the "data-target" attribute
+				var target = $el.dataset.target;
+				var $target = document.getElementById(target);
+
+				// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+				$el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+
+			});
+			});
+		}
+
+		});
+	</script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/script.js"/>
+</body>
+</html>

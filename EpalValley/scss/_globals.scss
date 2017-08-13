@@ -1,0 +1,44 @@
+
+body { background: $background; overflow: hidden;}
+a{ color: $purple;}
+.container { padding: 0 30px; max-width: 960px;}
+.button {
+    border-radius: 20px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: $white;
+    margin: 0 10px;
+    background: $purple;
+    border-color: $purple;
+    margin: 10px;
+    &:hover{
+        background: $white;
+    }
+    &:focus{
+        border-color: $white;
+    }
+}
+.hero-head { padding-bottom: 20px;}
+.bg-alice{ background: aliceblue;}
+.hero-body{
+    text-align: left;
+    h1{
+        color: $black;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 2rem !important;
+        @media(max-width: $xsmall-bp){ font-size: 2rem;}
+    }
+    h2 { color: $black; margin-bottom: 30px; font-weight: 400;
+        font-size: 2rem;
+        line-height: 1.5;
+        @media(max-width: $xsmall-bp){ font-size: 1.5rem;}
+        span{
+            border-bottom: 2px solid $purple;
+        }
+    }
+    p{ font-size: 1rem;}
+}

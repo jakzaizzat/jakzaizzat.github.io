@@ -1,0 +1,208 @@
+
+
+//Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Yanone+Kaffeesatz:200,300,400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// Partials
+@import "reset";
+@import "bulma";
+@import "variables";
+@import "mixins";
+@import "globals";
+
+body {
+	font-family: $primary-font;
+	min-height: 100vh;
+	// display: flex;
+	// flex-direction: column;
+}
+
+.navbar{
+	background: $red;
+	padding: 20px 0;
+}
+.navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link{ 
+	background: transparent;
+	border-bottom: 2px solid $white;
+}
+.hero { padding: 0 30px;}
+.hero-body { padding: 100px 0;
+	h1, .hero-title{ color: $white; font-size: 2.3rem; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; line-height: 1; text-align: center; transform: rotate(-10deg);
+	@media(max-width: $med-bp) { font-size: 1.8rem;}
+	@media(max-width: $small-bp) { font-size: 1.3rem;}
+		span{ 
+			font-size: 2rem;
+			@media(max-width: $med-bp) { font-size: 1.5rem;}
+			@media(max-width: $small-bp) { font-size: 1.2rem;}
+		}
+	}
+	.red { color: $red;}
+	.hero-title{ font-weight: 700; font-size: 7rem; display: flex; align-items: center; justify-content: center;
+		@media(max-width: $med-bp) { font-size: 5rem;}
+		@media(max-width: $small-bp) { font-size: 3rem;}
+		.small-text{ 
+			font-size: 2rem;
+			font-weight: 300;
+			padding: 0 10px;
+			@media(max-width: $med-bp) { font-size: 1.5rem;}
+			@media(max-width: $small-bp) { font-size: 1.2rem;}
+		}
+	}
+	.arrow_img{ max-width: 100px; height: auto; display: block; margin: auto;}
+}
+
+.menu-item{
+	background-position: center center;
+	background-size: cover;
+	padding: 50px 40px;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: 300;
+	min-height: 350px;
+	color: $white;
+	position: relative;
+	z-index: 100;
+	.menu-title{ font-size: 3rem;font-weight: 700;}
+	.menu-description { font-size: 2rem; margin-bottom: 20px;}
+	.menu-title.black,.menu-description.black { color: $black; }
+	.menu-flavour {
+		background:$red;
+		font-size: 1.8rem;
+		padding: 10px 20px;
+		border-radius: 10px;
+	}
+	.important { position: absolute; bottom: 30px; left: 50px; }
+	.menu-price{
+		background: $red;
+		font-size: 2.5rem;
+		padding: 15px 20px;
+		border-radius: 20px;
+		font-weight: 700;
+		display: flex;
+		align-items: flex-start;
+		max-width: 120px;
+		margin-top: 30px;
+		position: absolute;
+		bottom: 30px;
+		span{ font-size: 3.5rem;}
+		.currency{ font-weight: 300; font-size: 2rem; margin: 7px 0 0 0;}
+	}
+}
+.menu-item *, .overlay * {
+	position: relative;
+}
+.menu-item::before,
+.overlay::before{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: rgba($layer, .2);
+	display: block;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+.location-card{ background: $green; color: $white; font-weight: 700; padding: 30px;
+	.location-card-title{ font-size: 4.5rem; text-transform: uppercase; display: flex; align-items: center;
+		@media(max-width: $med-bp) { font-size: 3rem;}
+		img { margin: -10px 10px 0 0;}
+		h3 { padding: 0 15px 0 0;}
+		.inline-text { margin: -10px 0 0 0 ;}
+		span { font-weight: 300; font-size: 1.5rem; line-height: 1.2;
+		@media(max-width: $med-bp) { font-size: 1.2rem;}
+		}
+	}
+	.location-card-search{ 
+		font-family: $secondary-font; display: flex; background: $white; padding: 5px; border-radius: 20px; margin-top: 20px;
+		@media(max-width: $small-bp) {
+			flex-direction: column;
+			background: transparent;
+		}
+		input {
+			background: $white;
+			padding: 15px 25px;
+			display: inline-block; 
+			font-size: .9rem;
+			box-shadow: none;
+			border-color: transparent;
+			@media(max-width: $small-bp) { margin-bottom: 10px;}
+		}
+		button { display: inline-block; font-weight: 700; background: $gray2; color: $white; padding: 5px 20px; border-radius: 30px; height: auto; font-size: .9rem;}
+	}
+}
+
+.card-text-only{ background: $gray; padding: 80px 40px; 
+	background-size: cover;
+	
+	h3{
+		text-transform: uppercase;
+		font-size: 4.5rem;
+		font-weight: 700;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		color: $white;
+		span{ color: $orange; font-weight: 300; font-size: 2.1rem; margin: .8rem 5px 0 0;}
+	}
+}
+
+.list-recipe{ margin-bottom: 2.5rem;
+	@media(max-width: $med-bp){ margin: 0 0 2.5rem;}
+	.column {  position: relative;
+	}
+	.menu-item { margin: .75rem; height: 100%;
+		@media(max-width: $small-bp) { margin: .75rem 0; }
+	}
+	.menu-description{ margin-bottom: 10px;}
+	.important{ 
+		position: initial;
+	}
+}
+
+.menu-categories{ margin-bottom: 3rem;
+	@media(max-width: $med-bp){ margin: 0 0 3rem;}
+	.columns{ margin: 0;}
+}
+
+.menu-ads{line-height: 1; text-align: center; padding: 50px 60px; height: 100%; background: $gray; color: $white; position: relative;
+	h3{ 
+		font-size: 3rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		@media(max-width: $small-bp) { font-size: 2rem;}
+	}
+	p{
+		font-size: 1.5rem;
+		font-weight: 100;
+		text-transform: uppercase;
+		@media(max-width: $small-bp) { font-size: 1.2rem;}
+	}
+}
+
+
+.footer{ border-top: 1px solid $line;
+	background: $black;
+	.navbar{ background: $black;}
+	.container{ border-bottom: 1px solid $line; padding-bottom: 20px;}
+	.navbar-menu{ 
+		.navbar-start{ margin-right: 20px;
+			.navbar-item{ color: $gray2; border: none;}
+			.navbar-item::after{
+				content: "|";
+				position: absolute;
+				top: calc(.8rem + 10px);
+				right: 0;
+			}
+		}
+		.navbar-end{
+			.navbar-item{
+				border: none;
+				padding: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,203 @@
+
+
+//Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// Partials
+@import "reset";
+@import "bulma";
+@import "variables";
+@import "mixins";
+@import "globals";
+
+body {
+	font-family: $primary-font;
+	min-height: 100vh;
+}
+
+.nav { color: $white; box-shadow: none !important;
+	.logo{ 
+		font-size: $line-height !important; font-weight: 700; color: $black !important;
+		img { margin-right: 10px; width: auto;max-height: 50px;}
+	}
+	.nav-item { font-size: $nav-size; color: $black !important;
+		.fa { color: $yellow; font-size: $nav-size;}
+	}
+}
+
+.hero { 
+	padding: 40px 0;
+	background-color: $white;
+	background-blend-mode: multiply;
+}
+
+
+
+.services {
+	.columns{
+		.box{ 
+			margin: 10px 10px 1.5rem;
+			padding: 30px 40px;
+			box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+			&:hover{
+				box-shadow: 0 11px 20px rgba(50,50,93,.1), 0 6px 11px rgba(0,0,0,.08);
+				transform: translateY(2px);
+			}
+			h3{ text-transform: uppercase; font-weight: 700; margin-bottom: 20px; font-size: 1.5rem; color: rgba($purple,.8);}
+		}
+	}
+}
+
+.portfolio {
+	padding: 50px 0;
+}
+.category{
+	padding: 60px 30px 40px;
+	background-size: cover;
+	margin: 10px 15px;
+	text-align: center;
+	position: relative;
+	h3{ font-size: 2rem; color: $white; font-weight: 700; }
+	p { font-size: $font-size; color: $white; margin-bottom: 50px;}
+}
+.category *{
+	position: relative;
+}
+.category::before{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: rgba($layer, .7);
+	display: block;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+
+.about{
+	.title{
+		margin-bottom: 2.5rem;
+	}
+	img{
+		margin-bottom: 0px;
+	}
+	figcaption{
+		margin-bottom: 50px;
+	}
+	p{
+		font-size: 1.5rem;
+		color: $black;
+		margin-bottom: 50px;
+		@media(max-width: $xsmall-bp){ font-size: 1.2rem;}
+	}
+}
+
+.contacts{
+	.column{
+		padding: 0px 20px 40px;
+	}
+	h1{ font-size: 2rem;}
+	p{
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	ul{
+		li{ font-size: 1.5rem; margin: 20px 0;
+			.icon{ margin-right: 20px;
+				color: $purple;
+			}
+			a{
+				color: $black;
+				border-bottom: 1px solid $black;
+			}
+		}
+	}
+}
+
+.content-meta{
+	background-size: cover;
+	position: relative;
+	.title{ margin-bottom: 1rem; color: $white;}
+	.date { font-size: 1.5rem; color: $white;}
+}
+.content-meta *{
+	position: relative;
+}
+.content-meta::before{
+	position: absolute;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba($layer, .5);
+	z-index: 0;
+}
+#content{
+	line-height: 1.5;
+	p,pre{
+		font-size: 1.3rem;
+		margin: 1.5rem 0;
+		color: $black;
+	}
+	h2{ font-size: 2rem; font-weight: 700; margin: 2rem 0;}
+}
+
+.list {
+	padding: 100px 0;
+	li{
+		font-size: 1.5rem;
+		a{
+			color: $black;
+			span{ font-weight: 600;}
+		}
+		a:hover{
+			border-bottom: 1px solid $purple;
+		}
+	}
+}
+
+#cta-section{
+	background-image: url('../image/hills3.svg');
+	background-repeat: repeat-x;
+	background-color: aliceblue;
+	color: $white;
+	background-position: 100% 100%;
+	background-size: 200px;
+	position: relative;
+}
+
+@keyframes example {
+    0%   {left: 0;}
+    100% {left: 100vw;}
+}
+.cta-section{padding: 50px 0 100px;position: inherit;
+	h1{ font-size: 2rem; font-weight: 600; color: $black; line-height: 1.2;}
+	.button{ display: block;
+	display: flex; align-items: center;}
+	p{
+		color: $black;
+		font-size: 1.8rem;
+		font-weight: 400;
+		span{
+			border-bottom: 1px solid $purple;
+		}
+	}
+	.cloud{
+		position: absolute;
+		width:	50px;
+		height: 50px;
+		bottom: 16px;
+		left: -20px;
+		animation: example 20s infinite;
+		animation-timing-function: cubic-bezier(0, 0, 0.47, 0.45);
+		
+		.panda1{
+			
+		}
+	}
+}

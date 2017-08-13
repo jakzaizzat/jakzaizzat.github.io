@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
+</head>
+<body>
+
+	<section class="hero">
+		<!-- Hero header: will stick at the top -->
+		<div class="hero-head">
+			<header class="nav">
+				<div class="container">
+					<div class="nav-left">
+						<a class="nav-item logo">
+							<img src="image/logo.svg" alt="Logo"> EPALVALLEY
+						</a>
+					</div>
+					
+					<span class="nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+
+					<div class="nav-right nav-menu">
+						<a class="nav-item is-active">
+							Guide
+						</a>
+						<a class="nav-item">
+							Journey
+						</a>
+						<a class="nav-item">
+							Hotels
+						</a>
+						<a class="nav-item">
+							Travelers
+						</a>
+						<a class="nav-item">
+							Travelers
+						</a>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<!-- Hero content: will be in the middle -->
+		<div class="hero-body bg-alice">
+			<div class="container">
+				<h1 class="title">
+					Let’s build something great together.
+				</h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="container hero-body">
+            <div class="columns contacts">
+                <div class="column is-half">
+                    <h1>Don't be shy!</h1>
+					<p>Whether you want to talk business or just chat, say hi! If I'm not currently online I’ll get back to you asap.</p>
+					<p>Im currently at Kuala Terengganu if you want to meet.</p>
+                </div>
+                <div class="column is-half">
+                    <ul>
+						<li>
+							<span class="icon is-medium">
+								<i class="fa fa-calendar-o"></i>
+							  </span>
+							  <a href="#">Book a 30 minutes free consultation</a>
+						</li>
+						<li>
+							<span class="icon is-medium">
+								<i class="fa fa-comment"></i>
+								</span>
+								<a href="#">Chat with me</a>
+						</li>
+						<li>
+							<span class="icon is-medium">
+								<i class="fa fa-envelope"></i>
+								</span>
+								<a href="mailto:hi@epalvalley.com">Email me at hi@epalvalley.com</a>
+						</li>
+					</ul>
+                </div>
+            </div>
+        </div>
+	</section>
+
+		
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+		// Get all "navbar-burger" elements
+		var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Check if there are any nav burgers
+		if ($navbarBurgers.length > 0) {
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(function ($el) {
+			$el.addEventListener('click', function () {
+
+				// Get the target from the "data-target" attribute
+				var target = $el.dataset.target;
+				var $target = document.getElementById(target);
+
+				// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+				$el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+
+			});
+			});
+		}
+
+		});
+	</script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/script.js"/>
+</body>
+</html>

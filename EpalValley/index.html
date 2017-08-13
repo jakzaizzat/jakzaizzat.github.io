@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
+</head>
+<body>
+
+	<section class="hero is-medium">
+		<!-- Hero header: will stick at the top -->
+		<div class="hero-head">
+			<header class="nav">
+				<div class="container">
+					<div class="nav-left">
+						<a class="nav-item logo">
+							<img src="image/logo.svg" alt="Logo"> EPALVALLEY
+						</a>
+					</div>
+					
+					<span class="nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+
+					<div class="nav-right nav-menu">
+						<a class="nav-item is-active">
+							Guide
+						</a>
+						<a class="nav-item">
+							Journey
+						</a>
+						<a class="nav-item">
+							Hotels
+						</a>
+						<a class="nav-item">
+							Travelers
+						</a>
+						<a class="nav-item">
+							Travelers
+						</a>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<!-- Hero content: will be in the middle -->
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Hi, I'm Aizzat.
+				</h1>
+				<h2 class="subtitle">
+					I code your awesome <span>PSD</span> design and make it functioning on your browser. I able to make it in <span>WordPress</span> template too.
+				</h2>
+				<a class="button">Chat with me now</a>
+				<a class="button">Book a meeting</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="services">
+		<div class="container hero-body">
+			<h1 class="title">
+				How I can use my skills to help you
+			</h1>
+			<div class="columns">
+				<div class="box column">
+					<h3>PSD to HTML</h3>
+					<p>I develop responsive layouts, work with Retina display and bunch of JavaScript features based on your PSD design.</p>
+				</div>
+				<div class="box column">
+					<h3>PSD to WordPress</h3>
+					<p>I develop a WordPress website that able you to use WordPress function in your own design.</p>
+				</div>
+			</div>
+			<div class="columns">
+					<div class="box column">
+						<h3>WordPress Development</h3>
+						<p>Have an idea to start a website or project? Don’t know which one is the best for you? Tell me about your idea, and we can brainstorm together and make it happens.</p>
+					</div>
+					<div class="box column">
+						<h3>Landing Page</h3>
+						<p>Need a fast website that can sell immediately? Want to collect a leads from your prospect? Let me design a landing page that converts the visitor into your customers. You handle the marketing and let me manage the conversion into the prospect.</p>
+					</div>
+				</div>
+			
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container hero-body">
+			<h1 class="title">
+				Some of my latest works
+			</h1>
+			<div class="columns categories">
+				<div class="category column" style="background-image: url('image/archinext.png');">
+					<h3 class="category_name">ArchiNext</h3>
+					<p>PSD to HTML Conversion</p>
+					<a class="button" href="http://www.play.epalvalley.com/archinext" target="_blank">Visit Website</a>
+				</div>
+				<div class="category column" style="background-image: url('image/pizzaro.png');">
+					<h3 class="category_name">Pizzaro</h3>
+					<p>PSD to HTML Conversion</p>
+					<a class="button" href="http://www.play.epalvalley.com/pizzaro/" target="_blank">Visit Website</a>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="cta-section">
+		<div class="hero-body">
+			<div class="container cta-section">
+				<div class="columns">
+					<div class="column is-half is-offset-one-quarter">
+						<h1>Wow you reached the end of the page! Could that mean that you're interested in working together?</h1>
+						<p>Send me an <span><a href="mailto:hi@epalvalley.com">email</a></span> or ask me at <span><a href="http://twitter.com/jakzaizzat">Twitter</a></span></p>
+					</div>
+				</div>
+				<div class="cloud">
+					<img src="image/panda.svg" class="panda1"/>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+		// Get all "navbar-burger" elements
+		var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Check if there are any nav burgers
+		if ($navbarBurgers.length > 0) {
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(function ($el) {
+			$el.addEventListener('click', function () {
+
+				// Get the target from the "data-target" attribute
+				var target = $el.dataset.target;
+				var $target = document.getElementById(target);
+
+				// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+				$el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+
+			});
+			});
+		}
+
+		});
+	</script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/script.js"/>
+</body>
+</html>
