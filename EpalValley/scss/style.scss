@@ -34,7 +34,7 @@ body {
 
 
 
-.services {
+.services { background-image: url('../image/polygonal.png'); padding: 5rem 0; background-position: 0px 268px; background-repeat: repeat-x;
 	.columns{
 		.box{ 
 			margin: 10px 10px 1.5rem;
@@ -77,7 +77,7 @@ body {
 }
 
 
-.about{
+.about{	
 	.title{
 		margin-bottom: 2.5rem;
 	}
@@ -139,12 +139,25 @@ body {
 }
 #content{
 	line-height: 1.5;
-	p,pre{
+	p,pre,li{
 		font-size: 1.3rem;
-		margin: 1.5rem 0;
+		margin: 2rem 0;
 		color: $black;
 	}
+	li{ margin: 0 0 1rem; list-style-type: initial;}
 	h2{ font-size: 2rem; font-weight: 700; margin: 2rem 0;}
+	img{
+		display: block;
+		margin: auto;
+		border: 1px solid rgba($black,.5);
+		margin-bottom: 20px;
+	}
+	a{ border-bottom: 1px solid $purple;}
+	a:hover{ background: $purple; color: $white;}
+	.giphy-embed {
+		display: block;
+		margin: auto;
+	}
 }
 
 .list {

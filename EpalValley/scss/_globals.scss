@@ -22,6 +22,10 @@ a{ color: $purple;}
 }
 .hero-head { padding-bottom: 20px;}
 .bg-alice{ background: aliceblue;}
+.bg-polygon{
+    background-image: url('../image/polygonal.png'); padding: 5rem 0; background-repeat: no-repeat;
+	
+}
 .hero-body{
     text-align: left;
     h1{
@@ -29,7 +33,7 @@ a{ color: $purple;}
         font-weight: 700;
         font-size: 3rem;
         line-height: 1.2;
-        margin-bottom: 2rem !important;
+        margin-bottom: 5rem !important;
         @media(max-width: $xsmall-bp){ font-size: 2rem;}
     }
     h2 { color: $black; margin-bottom: 30px; font-weight: 400;
@@ -42,3 +46,4 @@ a{ color: $purple;}
     }
     p{ font-size: 1rem;}
 }
+
